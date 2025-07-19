@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemang Gour - Computer Science Engineering Student & Aspiring AI Engineer</title>
+    <meta name="description"
+        content="Portfolio of Hemang Gour, Computer Science Engineering Student & Aspiring AI Engineer specializing in AI development and system programming">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-color-scheme="dark">
+    <!-- Fixed Background -->
+    <div class="fixed-background"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">HG</a>
+            </div>
+
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#github" class="nav__link">GitHub</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Opaque) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__greeting">Hi, I'm</span>
+                        <span class="hero__name">Hemang Gour</span>
+                    </h1>
+                    <h2 class="hero__subtitle">Computer Science Engineering Student & Aspiring AI Engineer</h2>
+                    <p class="hero__description">
+                        A passionate developer and aspiring AI engineer from India, blending low-level programming with
+                        high-level AI solutions.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__avatar">
+                        <!-- <img src="./assets/profile-pic.png" alt="Hemang Gour Profile Picture"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Transparent with blur) -->
+    <section id="about" class="about section-transparent">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <div class="about__image">
+                    <div class="about__photo">
+                        <!-- <img src="./assets/profile-pic.png" alt="Hemang Gour Profile Picture"> -->
+                    </div>
+                </div>
+                <div class="about__text">
+                    <p class="about__description">
+                        I'm a Computer Science Engineering student with a passion for blending low-level programming
+                        languages like C with high-level Python scripts. I specialize in building AI assistants,
+                        automation tools, and backend systems.
+                    </p>
+                    <p class="about__description">
+                        With 611 contributions in the last year, I'm actively developing projects that span from memory
+                        management systems to AI-powered applications. Currently focused on expanding my expertise in
+                        Django REST Framework, Socket Programming, and Machine Learning to create innovative solutions
+                        that bridge the gap between traditional programming and modern AI technologies.
+                    </p>
+                    <div class="about__links">
+                        <a href="https://linkedin.com/in/hemanggour" target="_blank"
+                            class="btn btn--secondary btn--sm">LinkedIn</a>
+                        <a href="https://github.com/Hemanggour" target="_blank"
+                            class="btn btn--secondary btn--sm">GitHub</a>
+                        <a href="mailto:hemanggour547@gmail.com" class="btn btn--secondary btn--sm">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Transparent with blur) -->
+    <section id="skills" class="skills section-transparent">
+        <div class="container">
+            <h2 class="section__title">Skills & Technologies</h2>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon"></div>
+                    <h3 class="skill-card__title">Programming Languages</h3>
+                    <ul class="skill-card__list">
+                        <li>Python (Primary)</li>
+                        <li>C/C++</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon"></div>
+                    <h3 class="skill-card__title">Frameworks & Technologies</h3>
+                    <ul class="skill-card__list">
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>MySQL</li>
+                        <li>HTML/CSS</li>
+                        <li>FastAPI</li>
+                        <li>Streamlit</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon"></div>
+                    <h3 class="skill-card__title">Currently Learning</h3>
+                    <ul class="skill-card__list">
+                        <li>Django REST Framework</li>
+                        <li>Socket Programming</li>
+                        <li>Machine Learning</li>
+                        <li>AI Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Transparent with blur) -->
+    <section id="projects" class="projects section-transparent">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <div class="project-card__image"></div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">AI-Agent-with-RAG</h3>
+                        <p class="project-card__description">
+                            AI-powered document Q&A assistant with Retrieval-Augmented Generation pipeline using Google
+                            Gemini LLM
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Google Gemini</span>
+                            <span class="tech-tag">LangChain</span>
+                        </div>
+                        <a href="https://github.com/Hemanggour/AI-Agent-with-RAG" target="_blank"
+                            class="btn btn--outline btn--sm">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__image"></div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">AI-Assistant</h3>
+                        <p class="project-card__description">
+                            Command-based assistant using Python with GUI, website interface, and API integration
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Python (96.1%)</span>
+                            <span class="tech-tag">HTML (2.4%)</span>
+                            <span class="tech-tag">CSS (1.5%)</span>
+                        </div>
+                        <a href="https://github.com/Hemanggour/AI-Assistant" target="_blank"
+                            class="btn btn--outline btn--sm">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__image"></div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Memory-Manager-in-C</h3>
+                        <p class="project-card__description">
+                            Custom memory management system in C with allocation tracking and leak detection
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">C (100%)</span>
+                        </div>
+                        <a href="https://github.com/Hemanggour/Memory-Manager-in-C" target="_blank"
+                            class="btn btn--outline btn--sm">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__image"></div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Data-Analytics</h3>
+                        <p class="project-card__description">
+                            Jupyter notebooks for data analysis including Netflix and World Population analysis
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Python (100%)</span>
+                            <span class="tech-tag">Jupyter Notebooks</span>
+                        </div>
+                        <a href="https://github.com/Hemanggour/Data-Analytics" target="_blank"
+                            class="btn btn--outline btn--sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Highlights Section (Transparent with blur) -->
+    <section id="github" class="github section-transparent">
+        <div class="container">
+            <h2 class="section__title">GitHub Highlights</h2>
+            <div class="github__content">
+                <div class="highlight-card">
+                    <h3 class="highlight-card__title">611 Contributions</h3>
+                    <p class="highlight-card__description">Active development with 611 contributions in the last year
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3 class="highlight-card__title">22 Repositories</h3>
+                    <p class="highlight-card__description">Diverse portfolio of public repositories showcasing various
+                        programming skills</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3 class="highlight-card__title">Python Expertise</h3>
+                    <p class="highlight-card__description">Primary language Python with focus on AI and automation
+                        projects</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3 class="highlight-card__title">Multi-Language Skills</h3>
+                    <p class="highlight-card__description">Proficiency in C, C++, Python, and JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Transparent with blur) -->
+    <section id="contact" class="contact section-transparent">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <p class="contact__description">
+                        I'm always excited to collaborate on new AI projects and development opportunities.
+                        Let's discuss how we can work together to create innovative solutions.
+                    </p>
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <span class="contact__label">Email:</span>
+                            <a href="mailto:hemanggour547@gmail.com" class="contact__link">hemanggour547@gmail.com</a>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Location:</span>
+                            <span class="contact__text">India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-transparent">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>&copy; 2025 Hemang Gour. All rights reserved.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="https://linkedin.com/in/hemanggour" target="_blank" class="footer__link">LinkedIn</a>
+                    <a href="https://github.com/Hemanggour" target="_blank" class="footer__link">GitHub</a>
+                    <a href="mailto:hemanggour547@gmail.com" class="footer__link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
