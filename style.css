@@ -510,7 +510,7 @@ pre code {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-base);
   transition: border-color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-fast) var(--ease-standard);
+  box-shadow var(--duration-fast) var(--ease-standard);
 }
 
 textarea.form-control {
@@ -1034,6 +1034,29 @@ a {
   z-index: 0;
 }
 
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-primary);
+  z-index: 2;
+  animation: revealHero 1.2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+  transform-origin: bottom;
+}
+
+@keyframes revealHero {
+  0% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+  }
+}
+
 .hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1041,6 +1064,22 @@ a {
   align-items: center;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  animation: fadeInContent 0.5s ease-out forwards;
+  animation-delay: 0.8s;
+  /* Start after the reveal animation is mostly done */
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero__text {
