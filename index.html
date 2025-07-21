@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar-responsive.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -46,7 +47,7 @@
 
     <!-- Hero Section (Opaque) -->
     <!-- <section id="home" class="hero">  -->
-    <section id="home" class="section-transparent"> 
+    <section id="home" class="section-transparent">
         <div class="container">
             <div class="hero__content">
                 <div class="hero__text">
@@ -54,7 +55,7 @@
                         <span class="hero__greeting">Hi, I'm</span>
                         <span class="hero__name">Hemang Gour</span>
                     </h1>
-                    <h2 class="hero__subtitle">Computer Science Engineering Student & Aspiring AI Engineer</h2>
+                    <h2 class="hero__subtitle">AI/ML Engineer</h2>
                     <p class="hero__description">
                         A passionate developer and aspiring AI engineer from India, blending low-level programming with
                         high-level AI solutions.
@@ -66,7 +67,7 @@
                 </div>
                 <div class="hero__image">
                     <div class="hero__avatar">
-                        <!-- <img src="./assets/profile-pic.png" alt="Hemang Gour Profile Picture"> -->
+                        <img src="./assets/profile-pic.png" alt="Profile Picture">
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@
             <div class="about__content">
                 <div class="about__image">
                     <div class="about__photo">
-                        <!-- <img src="./assets/profile-pic.png" alt="Hemang Gour Profile Picture"> -->
+                        <img src="./assets/profile-pic.png" alt="Profile Picture">
                     </div>
                 </div>
                 <div class="about__text">
@@ -113,7 +114,9 @@
             <h2 class="section__title">Skills & Technologies</h2>
             <div class="skills__grid">
                 <div class="skill-card">
-                    <div class="skill-card__icon"></div>
+                    <div class="skill-card__icon">
+                        <img src="./assets/code.png" alt="">
+                    </div>
                     <h3 class="skill-card__title">Programming Languages</h3>
                     <ul class="skill-card__list">
                         <li>Python (Primary)</li>
@@ -123,7 +126,9 @@
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-card__icon"></div>
+                    <div class="skill-card__icon">
+                        <img src="./assets/framework.png" alt="">
+                    </div>
                     <h3 class="skill-card__title">Frameworks & Technologies</h3>
                     <ul class="skill-card__list">
                         <li>Flask</li>
@@ -136,7 +141,9 @@
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-card__icon"></div>
+                    <div class="skill-card__icon">
+                        <img src="./assets/learning.png" alt="">
+                    </div>
                     <h3 class="skill-card__title">Currently Learning</h3>
                     <ul class="skill-card__list">
                         <li>Django REST Framework</li>
@@ -253,6 +260,9 @@
                     <p class="highlight-card__description">Proficiency in C, C++, Python, and JavaScript</p>
                 </div>
             </div>
+            <div class="calendar highlight-card">
+                Loading GitHub contribution graph...
+            </div>
         </div>
     </section>
 
@@ -317,6 +327,11 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+        GitHubCalendar(".calendar", "Hemanggour", { responsive: true });
+    </script>
+
 </body>
 
 </html>
