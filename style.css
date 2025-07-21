@@ -1810,3 +1810,7 @@ section {
 .calendar .contrib-number {
   color: whitesmoke;
 }
+
+.calendar .table-column {
+  display:  none;
+}
