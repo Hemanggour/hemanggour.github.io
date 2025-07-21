@@ -1783,26 +1783,26 @@ section {
 
 /* Level 1 - subtle mint */
 .calendar .ContributionCalendar-day[data-level="1"] {
-  background-color: #1f4d2b;
+  background-color: #0d3c35;
 }
 
 /* Level 2 - calm green */
 .calendar .ContributionCalendar-day[data-level="2"] {
-  background-color: #2e7d32;
+  background-color: #1c6357;
 }
 
 /* Level 3 - modern medium green */
 .calendar .ContributionCalendar-day[data-level="3"] {
-  background-color: #4caf50;
+  background-color: #34bfa3;
 }
 
 /* Level 4 - soft pastel green */
 .calendar .ContributionCalendar-day[data-level="4"] {
-  background-color: #81c784;
+  background-color: var(--primary-color);
 }
 
 .calendar .ContributionCalendar-day:hover {
-  outline: 1px solid rgba(120, 255, 120, 0.25);
+  outline: 1px solid rgba(235, 235, 235, 0.442);
   box-shadow: 0 0 6px oklab(100% 0 -0.00011 / 0.39);
   cursor: pointer;
 }
