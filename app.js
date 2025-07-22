@@ -209,14 +209,20 @@ function initContactForm() {
             return;
         }
 
-        // Simulate form submission
         showNotification('Sending message...', 'info');
 
-        // Simulate API call delay
-        setTimeout(() => {
-            showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
-        }, 1500);
+        emailjs.send('portfolio', 'portfolio_template', {
+            from_name: name,
+            from_email: email,
+            message: message,
+        }, 'h_uIKVElopWuHE3eX')
+            .then(() => {
+                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            })
+            .catch(() => {
+                showNotification('Failed to send message. Please try again later.', 'error');
+            });
     });
 }
 
@@ -531,14 +537,13 @@ function loadGitHubRepoCount(username, element = "#repoCount") {
 }
 
 
-
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize core functionality first
     initSmoothScrolling();
     initContactForm();
     initProperScrolling();
-    
+
     // Initialize visual enhancements
     setTimeout(() => {
         initScrollAnimations();
