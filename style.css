@@ -1781,25 +1781,25 @@ section {
   max-width: 100%;
   overflow: auto;
 }
-
+/* 100, 255, 218, 1 */
 .calendar .ContributionCalendar-day[data-level='0'] {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(255, 255, 255, 0);
   border: 1px solid #666666;
 }
 
 /* Level 1 - subtle mint */
 .calendar .ContributionCalendar-day[data-level="1"] {
-  background-color: #0d3c35;
+  background-color: rgba(100, 255, 218, 0.2);
 }
 
 /* Level 2 - calm green */
 .calendar .ContributionCalendar-day[data-level="2"] {
-  background-color: #1c6357;
+  background-color: rgba(100, 255, 218, 0.4);
 }
 
 /* Level 3 - modern medium green */
 .calendar .ContributionCalendar-day[data-level="3"] {
-  background-color: #34bfa3;
+  background-color: rgba(100, 255, 218, 0.6);
 }
 
 /* Level 4 - soft pastel green */
