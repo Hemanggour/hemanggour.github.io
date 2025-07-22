@@ -504,13 +504,41 @@ const throttledScroll = throttle(() => {
 
 window.addEventListener('scroll', throttledScroll);
 
+function loadGitHubContributions(username, element = "#contribution") {
+    fetch(`https://github-contributions-api.deno.dev/${username}.json`)
+        .then(res => res.json())
+        .then(data => {
+            const total = data.totalContributions;
+            document.querySelector(element).innerText = `${total} Contributions`;
+        })
+        .catch(err => {
+            console.error("Failed to load GitHub contributions:", err);
+            document.querySelector(element).innerText = "N/A";
+        });
+}
+
+function loadGitHubRepoCount(username, element = "#repoCount") {
+    fetch(`https://api.github.com/users/${username}`)
+        .then(res => res.json())
+        .then(data => {
+            const totalRepos = data.public_repos;
+            document.querySelector(element).innerText = `${totalRepos} Repositories`;
+        })
+        .catch(err => {
+            console.error("Failed to fetch repo count:", err);
+            document.querySelector(element).innerText = "N/A";
+        });
+}
+
+
+
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize core functionality first
     initSmoothScrolling();
     initContactForm();
     initProperScrolling();
-
+    
     // Initialize visual enhancements
     setTimeout(() => {
         initScrollAnimations();
@@ -520,6 +548,8 @@ document.addEventListener('DOMContentLoaded', () => {
         initFormEffects();
         initDynamicBackground();
         initSubtleParallax();
+        loadGitHubContributions("Hemanggour");
+        loadGitHubRepoCount("Hemanggour");
     }, 100);
 });
 
