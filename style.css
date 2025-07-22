@@ -1718,6 +1718,10 @@ section {
     gap: 2rem;
   }
 
+  .hero__greeting {
+    margin-top: 2em;
+  }
+
   .hero__avatar {
     width: 250px;
     height: 250px;
